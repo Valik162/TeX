@@ -1,0 +1,84 @@
+\documentclass[12pt]{article}
+
+\usepackage[T2A]{fontenc}
+\usepackage[UTF8]{inputenc}
+\usepackage{mathtools}
+\usepackage[english,russian]{babel}
+\usepackage[left=2cm,right=2cm,top=1cm,bottom=2cm]{geometry}
+
+\begin{document}
+
+\begin{center}
+\bf \Large MathCad.
+\end{center}
+1. Ввести матрицу \it A \rm --- размерности $3 \times 4$, где $a_{ij} = \sin (0.3i+2j)$. Посчитать выражение
+\[\it A \rm \ast 
+\begin{pmatrix} 
+& 5 & \\ 
+& 4 & \\ 
+& 6 & \\ 
+& 4 & 
+\end{pmatrix}
+\ast 
+\begin{pmatrix}
+& 7 & -2 & 0.3 &
+\end{pmatrix}
+-
+\begin{pmatrix}
+& 1 & 0 & 2 &\\
+& -3 & 2 & 6 &\\
+& 0 & 0 & 3 &\\
+\end{pmatrix}
+.
+\]
+Высчитать определитель данного выражения.\\
+2. На одном рисунке построить графики функций:
+\begin {align*}
+f_1(x)=e^{sin(\frac{x}{2})}, \quad f_2(x)=cos(x)\cdot sin(x)+2, \quad x \in [3,6]
+\end {align*}
+3. Построить график функции
+\begin {align*}
+e^{sin(x) \ast cos(y)}
+\end {align*}
+4. Написать программный модуль, для вычисления функции \it f(x, y) \rm --- разложение в ряд\linebreak Тейлора функции $ \sqrt{x} $, в окрестностях точки \it y\rm. Сделать проверку на некоректные входные\linebreak данные.\\
+5. Вычислить
+\begin {gather*}
+\int \frac{(t-3)\sqrt{t+1}}{t^2}dt;\\
+\frac{d}{dm}\biggl[e^{m^2} \ast \tg(\frac{3}{m})\biggr];\\
+a=\sin(4);\\
+a=\frac{\sqrt{5 \ast \sin(34)}}{|\sin(28 \ast 0.4 - 15\cos(3))|};\\
+b=\tg(4) \ast \int\limits_{-1}^2  \sin(t^3)e^{4+t}dt;\\
+a+b;
+\end{gather*}
+6.  Раскрыть скобки в выражении\\ 
+\begin {equation*}
+(x_3+3)^2 \ast (x_2-x_3)^3;
+\end {equation*}
+ Разложить в ряд $$e^x$$
+\begin{center}
+\bf \Large MatLab.
+\end{center}
+Все вычисления оформить в один M-файл.\\
+7. Ввести матрицы\\
+\begin {center}
+$ A =
+\begin{pmatrix} 
+& 8 & 5 & 1 &\\
+& -3 & -5 & 0 &\\
+& 56 & 12.67 & 3.09 &\\
+\end{pmatrix}
+$
+\quad и \quad
+$ B =
+\begin{pmatrix} 
+& -4 & 0.4 & 21.8 &\\
+& -0 & 67.02 & 12.96 &\\
+& 4 & 45.28 & -3 &\\
+\end{pmatrix}
+$
+\end {center}
+Посчитать произведение матриц, разницу матриц, определитель матрицы \it A\rm.\\
+8. В матрице возвести в квадрат все неотрицательные элементы, отрицательные поделить\linebreak на определитель \it A \rm (реализовать при помощи управляющих конструкций).\\
+9. Построить график функции $ \sqrt{\frac{x+3}{x-2}} $ на промежутке [3,5].
+
+\end{document}
